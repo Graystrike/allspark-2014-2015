@@ -41,7 +41,7 @@
 #include "fatman.c"
 #include "Manipulator.c"
 #include "Hook.c"
-
+#include "Boxy.c"
 void initializeRobot()
 {
 	// Place code here to sinitialize servos to starting positions.
@@ -104,5 +104,6 @@ task main()
 		Manipulator();
 		fatman();
 		Hook();
+		Boxy();
 	}
 }

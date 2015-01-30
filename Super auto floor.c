@@ -84,7 +84,7 @@ task main()
 	motor[front_right]= 100;
 	motor[back_right]= 100;
 
-	wait1Msec (1000);
+	wait1Msec (1600);
 
 	motor[front_left]= 100; //backs up
 	motor[back_left]= 100;
@@ -98,14 +98,14 @@ task main()
   motor[front_right]= -100;
   motor[back_right]= -100;
 
-  wait1Msec (250);
+  wait1Msec (100);
 
  motor[front_left]= -100; //drives forward
   motor[back_left]= -100;
   motor[front_right]= 100;
   motor[back_right]= 100;
 
-  wait1Msec (500);
+  wait1Msec (800);
 
    motor[front_left]= 100; //drives backwards
   motor[back_left]= 100;
@@ -126,21 +126,21 @@ task main()
   motor[front_right]= 100;
   motor[back_right]= 100;
 
-  wait1Msec (250);
+  wait1Msec (500);
 
-   motor[front_left]= 100;//turns left
+   motor[front_left]= 100;//turns Left
   motor[back_left]= 100;
   motor[front_right]= 100;
   motor[back_right]= 100;
 
-  wait1Msec (300);
+  wait1Msec (350);
 
    motor[front_left]= -100; //drives forward
   motor[back_left]= -100;
   motor[front_right]= 100;
   motor[back_right]= 100;
 
-  wait1Msec (500);
+  wait1Msec (700);
 
    motor[front_left]= 0;
   motor[back_left]= 0;

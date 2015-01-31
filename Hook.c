@@ -6,9 +6,9 @@
 #pragma config(Motor,  mtr_S1_C2_2,     motorG,        tmotorTetrix, openLoop)
 #pragma config(Motor,  mtr_S1_C3_1,     motorH,        tmotorTetrix, openLoop)
 #pragma config(Motor,  mtr_S1_C3_2,     motorI,        tmotorTetrix, openLoop)
-#pragma config(Servo,  srvo_S1_C4_1,    servo1,               tServoStandard)
+#pragma config(Servo,  srvo_S1_C4_1,    h,                    tServoStandard)
 #pragma config(Servo,  srvo_S1_C4_2,    servo2,               tServoStandard)
-#pragma config(Servo,  srvo_S1_C4_3,    servo3,               tServoNone)
+#pragma config(Servo,  srvo_S1_C4_3,    servo1,               tServoStandard)
 #pragma config(Servo,  srvo_S1_C4_4,    servo4,               tServoNone)
 #pragma config(Servo,  srvo_S1_C4_5,    servo5,               tServoNone)
 #pragma config(Servo,  srvo_S1_C4_6,    servo6,               tServoNone)
@@ -18,13 +18,13 @@ void Hook()
 {
 	if(joy2Btn(6) == 1)// up - RB
 	{
-		servo [servo1] = 250;
+		servo [servo1] = 180;
 		servo [servo2] = 0;
 	}
 
 	if(joy2Btn(8) == 1) //down - RT
 	{
-		servo [servo2] = 191;
+		servo [servo2] = 180;
 		servo [servo1] = 64;
 	}
 

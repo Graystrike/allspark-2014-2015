@@ -18,7 +18,7 @@ void Hook()
 {
 	if(joy2Btn(6) == 1)// up - RB
 	{
-		servo [servo1] = 180;
+		servo [servo1] = 256;
 		servo [servo2] = 0;
 	}
 
